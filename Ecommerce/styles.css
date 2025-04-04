@@ -420,3 +420,50 @@ nav ul {
 .buy-button:hover {
     background-color: #0055cc;
 }
+/* Carrossel de produtos */
+.product-slider {
+    padding-bottom: 40px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #0066ff;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    transition: all 0.3s ease;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-slider {
+    position: relative;
+    padding: 0 25px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #0066ff;
+    width: 12px;
+    height: 12px;
+}
+
+.desconto{
+    background-color: rgb(129, 43, 187);
+    padding: 6px;
+    border-radius: 6px;
+}

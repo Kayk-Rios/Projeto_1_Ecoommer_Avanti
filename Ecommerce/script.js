@@ -31,7 +31,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     });
 
- 
+
+    // Funcionalidade de busca
+    const searchBtn = document.getElementById('search-btn');
+    const searchInput = document.getElementById('search-input');
+    const searchResult = document.getElementById('search-result');
+    const searchTerm = document.getElementById('search-term');
+
+    searchBtn.addEventListener('click', function() {
+        const query = searchInput.value.trim();
+        
+        if (query !== '') {
+            searchTerm.textContent = query;
+            searchResult.style.display = 'block';
+            searchResult.scrollIntoView({ behavior: 'smooth' });
+            searchInput.value = '';
+        } else {
+            searchResult.style.display = 'none';
+        }
+    });
+
+    searchInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            searchBtn.click();
+        }
+    });
+    
+
 });
 
 

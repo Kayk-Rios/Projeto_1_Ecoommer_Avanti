@@ -63,3 +63,80 @@ header {
 .logo img {
     height: 40px;
 }
+
+/* Barra de pesquisa */
+.search-bar {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar button {
+    padding: 0 15px;
+    background: #fff;
+    color: #666;
+    border-left: 1px solid #ddd;
+}
+
+/* Área do usuário */
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-greeting {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-greeting i {
+    font-size: 20px;
+    color: #0066ff;
+}
+
+.user-greeting p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.user-greeting p:first-child {
+    font-weight: bold;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart i {
+    font-size: 22px;
+    color: #333;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #0066ff;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}

@@ -301,3 +301,26 @@ nav ul {
 .search-result span {
     font-weight: bold;
 }
+
+/* Seção de produtos */
+.product-section {
+    padding: 40px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.see-more {
+    color: #0066ff;
+    font-size: 14px;
+    font-weight: 500;
+}

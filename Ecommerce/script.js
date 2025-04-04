@@ -77,7 +77,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-
+     // Hover nos departamentos para ativar categorias
+     const departamentos = document.querySelectorAll(".departamento");
+     const categorias = document.querySelectorAll(".categorias");
+ 
+     departamentos.forEach(departamento => {
+         departamento.addEventListener("mouseenter", function () {
+             categorias.forEach(categoria => categoria.classList.remove("active"));
+             const targetId = this.getAttribute("data-target");
+             const targetCategoria = document.getElementById(targetId);
+             if (targetCategoria) {
+                 targetCategoria.classList.add("active");
+             }
+         });
+     });
 
 });
 

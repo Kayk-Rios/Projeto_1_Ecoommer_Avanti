@@ -731,3 +731,30 @@ h2 {
         padding: 0.75rem 1rem;
     }
 }
+
+
+@media (max-width: 480px) {
+    .imagemBAck {
+        height: 300px;
+    }
+
+    .textBAck p {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer > div { /* Estiliza os blocos de informação do footer */
+        margin-bottom: 20px;
+    }
+    .avantiSocial {
+        margin-bottom: 30px;
+    }
+}

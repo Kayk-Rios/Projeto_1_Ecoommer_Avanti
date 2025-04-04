@@ -202,3 +202,38 @@ nav ul {
     font-weight: bold;
   }
  
+
+/* Estiliza o submenu */
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.submenu table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.submenu th, .submenu td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.departamento {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.categorias {
+    display: none;
+}
+
+.categorias.active {
+    display: table-cell;
+}

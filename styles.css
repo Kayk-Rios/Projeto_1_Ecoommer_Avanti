@@ -581,25 +581,22 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.textBAck {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  
+  .textBAck {
     width: 100%;
-}
-
-.textBAck p {
+  }
+  
+  .textBAck p {
+    width: 100%;
     color: white;
     text-align: center;
-    padding: 1rem 2rem;
     background-color: #0055cc;
-    max-width: 90%;
     font-size: 1.5rem;
-    border-radius: 8px;
-}
-
+    padding: 20px 0;
+    margin: 0; 
+  }
+  
 
 /* footer */
 .footer {

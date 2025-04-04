@@ -68,6 +68,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+     // Fecha o submenu ao clicar fora
+     document.addEventListener("click", function(e) {
+        const clickedInsideMenu = [...menuCategorias].some(link => link.contains(e.target));
+        if (!clickedInsideMenu && !submenu.contains(e.target)) {
+            submenu.style.display = "none";
+        }
+    });
 
 
 

@@ -24,6 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Atualização do carrossel ao redimensionar a janela
+    window.addEventListener('resize', function() {
+        setTimeout(function() {
+            productSlider.update();
+        }, 300);
+    });
+
  
 });
 

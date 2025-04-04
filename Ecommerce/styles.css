@@ -708,3 +708,26 @@ h2 {
         max-width: 50%; /* Ajusta o tamanho da imagem empilhada */
     }
 }
+
+@media (max-width: 768px) {
+    .section-2-wrapper {
+        flex-direction: column; /* Empilha recursos e imagem */
+    }
+    .section-2-features {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .section-2-image {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .imagemBAck {
+        height: 400px;
+    }
+
+    .textBAck p {
+        font-size: 1.2rem;
+        padding: 0.75rem 1rem;
+    }
+}

@@ -288,3 +288,16 @@ nav ul {
     color: #0066ff;
     line-height: 1;
 }
+
+/* Resultado da busca */
+.search-result {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-result span {
+    font-weight: bold;
+}

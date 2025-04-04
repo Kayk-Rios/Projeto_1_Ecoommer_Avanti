@@ -243,3 +243,48 @@ nav ul {
 .department .submenu.active {
     display: block;
 }
+
+
+/* Banner principal */
+.main-banner {
+    display: flex;
+    justify-content: center;
+    background-color: #E7E7EA;
+    align-items: center;
+    padding: 50px 0;
+    height: 400px;
+}
+
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+.image-content {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-size: 54px;
+    font-weight: 900;
+    margin: 0;
+    color: #111;
+}
+
+.text-content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #0066ff;
+}
+
+.discount {
+    font-size: 62px;
+    font-weight: 900;
+    color: #0066ff;
+    line-height: 1;
+}

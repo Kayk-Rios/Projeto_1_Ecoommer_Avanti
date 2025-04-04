@@ -237,3 +237,9 @@ nav ul {
 .categorias.active {
     display: table-cell;
 }
+
+
+/* Mostra o submenu quando a classe "active" é adicionada */
+.department .submenu.active {
+    display: block;
+}

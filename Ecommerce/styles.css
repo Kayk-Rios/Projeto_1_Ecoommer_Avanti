@@ -599,3 +599,58 @@ h2 {
     font-size: 1.5rem;
     border-radius: 8px;
 }
+
+
+/* footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer h5 {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #303030;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.logo img{
+    width: 152px;
+    height: 27px;
+}
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+.avantiSocial{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom {
+    padding: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    margin-top: 20px;
+    color: #777;
+    gap: 40px;
+}
+
+

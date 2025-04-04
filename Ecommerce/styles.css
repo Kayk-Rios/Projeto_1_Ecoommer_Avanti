@@ -654,3 +654,57 @@ h2 {
 }
 
 
+/* Responsividade */
+@media (max-width: 992px) {
+    .product-slider .swiper-button-prev {
+        left: 0;
+    }
+    
+    .product-slider .swiper-button-next {
+        right: 0;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        order: 1;
+        flex-basis: 50%;
+    }
+    
+    .user-area {
+        order: 2;
+        flex-basis: 50%;
+        justify-content: flex-end;
+    }
+    
+    .search-bar {
+        order: 3;
+        flex-basis: 100%;
+        margin: 15px 0 0;
+        max-width: none;
+    }
+    
+    .banner-content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+        flex-direction: column; /* Empilha imagem e texto */
+    }
+    .image-container {
+        width: 100%;
+        padding: 20px;
+    }
+    .content-container {
+        width: 100%;
+        padding: 20px;
+    }
+    .mug-image {
+        max-width: 50%; /* Ajusta o tamanho da imagem empilhada */
+    }
+}

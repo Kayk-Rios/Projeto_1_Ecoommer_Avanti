@@ -57,6 +57,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    // Funcionalidade de menu de categorias (submenu em forma de tabela)
+    const menuCategorias = document.querySelectorAll(".menu-categorias");
+    const submenu = document.querySelector(".submenu");
+
+    menuCategorias.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+        });
+    });
+
+
+
+
 
 });
 

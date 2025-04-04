@@ -1,4 +1,4 @@
-Link do projeto em deply: https://projeto-1-ecommerce.netlify.app/ 
+Link do projeto em deploy: https://projeto-1-ecommerce.netlify.app/ 
 
 🎓 Innovation Class — Projeto Final
 Este repositório contém a entrega do desafio final proposto, que consistiu no desenvolvimento de um layout disponível no Figma utilizando HTML, CSS e JavaScript, com foco em responsividade e interatividade.

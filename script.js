@@ -60,21 +60,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // Funcionalidade de menu de categorias (submenu em forma de tabela)
     const menuCategorias = document.querySelectorAll(".menu-categorias");
     const submenu = document.querySelector(".submenu");
-
+    
+    // Hide submenu by default (for safety, even though CSS should handle this)
+    submenu.style.display = "none";
+    
     menuCategorias.forEach(link => {
         link.addEventListener("click", function(e) {
             e.preventDefault();
-            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+            
+            // Simple toggle
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
         });
     });
-
-     // Fecha o submenu ao clicar fora
-     document.addEventListener("click", function(e) {
+    
+    // Close when clicking outside
+    document.addEventListener("click", function(e) {
         const clickedInsideMenu = [...menuCategorias].some(link => link.contains(e.target));
         if (!clickedInsideMenu && !submenu.contains(e.target)) {
             submenu.style.display = "none";
         }
     });
+    
 
 
      // Hover nos departamentos para ativar categorias

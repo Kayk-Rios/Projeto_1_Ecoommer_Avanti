@@ -206,37 +206,138 @@ nav ul {
 /* Estiliza o submenu */
 
 
-.submenu {
-    display: none;
-    position: absolute;
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .submenu {
+    position: relative;
     background: white;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 20px;
     z-index: 1000;
-}
-
-.submenu table {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .submenu-container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .table-container {
+    width: 75%;
+  }
+  
+  .submenu table {
     width: 100%;
     border-collapse: collapse;
-}
-
-.submenu th, .submenu td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.departamento {
+  }
+  
+  .submenu th {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 2px solid #e0e0e0;
+    color: #333;
     font-weight: bold;
+  }
+  
+  .submenu td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #666;
+  }
+  
+  .submenu td a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .submenu td a:hover {
+    color: #3498db;
+  }
+  
+  .departamento {
+    font-weight: bold;
+    color: #333 !important;
+  }
+  
+  .categoria {
+    color: #3498db;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .promo-card {
+    width: 25%;
+    min-width: 240px;
+    background-image: url('/img/canecaTabua.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .promo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-content {
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-content h3 {
+    font-size: 19px;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+  }
+  
+  .card-content h2 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+  }
+  
+  .view-all-btn {
+    background-color: transparent;
+    color: white;
+    border: #fffbfb 1px solid ;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 25px;
     cursor: pointer;
-}
-
-.categorias {
-    display: none;
-}
-
-.categorias.active {
-    display: table-cell;
-}
+    font-weight: bold;
+    width: fit-content;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #4b4040;
+  }
+  
+ 
 
 
 /* Mostra o submenu quando a classe "active" é adicionada */
@@ -519,7 +620,7 @@ h2 {
     align-items: center;
     background-color: #E7E7EA;
     padding: 50px 0;
-    width: 90vw;
+    width: 100%;
 }
 
 .section-2-wrapper {
@@ -732,6 +833,21 @@ h2 {
 
 
 /* Responsividade */
+
+@media (max-width: 768px) {
+    .submenu-container {
+      flex-direction: column;
+    }
+    
+    .table-container, .promo-card {
+      width: 100%;
+    }
+    
+    .promo-card {
+      min-height: 200px;
+      margin-top: 20px;
+    }
+  }
 @media (max-width: 992px) {
     .image-content {
         display: none;

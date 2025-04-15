@@ -990,3 +990,133 @@ h2 {
         font-size: 36px;
     }
 }
+
+
+
+
+
+
+
+
+/* Acordeon */
+
+
+.avnt-footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.avnt-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.avnt-brand-social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.avnt-logo img {
+    max-width: 150px;
+}
+
+.avnt-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.avnt-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.avnt-section-title {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.avnt-link-item {
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #666;
+}
+
+.avnt-payment-methods {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 0 15px;
+}
+
+.avnt-payment-methods img {
+    max-width: 100%;
+    height: auto;
+}
+
+.avnt-accordion-header {
+    cursor: pointer;
+    position: relative;
+}
+
+.avnt-accordion-content {
+    overflow: hidden;
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 767px) {
+    .avnt-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .avnt-accordion-header {
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .avnt-accordion-header::after {
+        content: '>';
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .avnt-accordion-header.avnt-active::after {
+        content: '<';
+    }
+
+    .avnt-accordion-content {
+        max-height: 0;
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+        padding-left: 15px;
+    }
+
+    .avnt-accordion-content.avnt-active {
+        max-height: 300px;
+        padding-bottom: 15px;
+    }
+
+    .avnt-brand-social {
+        margin-bottom: 20px;
+        border-bottom: none;
+    }
+}
+
+/* Para desktop */
+@media (min-width: 768px) {
+    .avnt-accordion-header::after {
+        display: none;
+    }
+
+    .avnt-accordion-content {
+        max-height: none !important;
+    }
+}

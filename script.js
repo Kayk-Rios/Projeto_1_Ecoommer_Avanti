@@ -102,6 +102,58 @@ document.addEventListener('DOMContentLoaded', function() {
          });
      });
 
+
+
+
+    //  Acordeo
+
+    function toggleAccordion() {
+        this.classList.toggle('avnt-active');
+        const content = this.nextElementSibling;
+        content.classList.toggle('avnt-active');
+    }
+    
+    function setupAccordion() {
+        const isMobile = window.innerWidth < 768;
+        const accordionHeaders = document.querySelectorAll('.avnt-accordion-header');
+        const accordionContents = document.querySelectorAll('.avnt-accordion-content');
+        
+        accordionHeaders.forEach(header => {
+            header.removeEventListener('click', toggleAccordion);
+        });
+        
+        if (isMobile) {
+            accordionHeaders.forEach(header => {
+                header.style.cursor = 'pointer';
+                header.addEventListener('click', toggleAccordion);
+                
+                const content = header.nextElementSibling;
+                if (content) {
+                    content.classList.remove('avnt-active');
+                    header.classList.remove('avnt-active');
+                }
+            });
+        } else {
+            accordionHeaders.forEach(header => {
+                header.style.cursor = 'default';
+                header.classList.remove('avnt-active');
+            });
+            
+            accordionContents.forEach(content => {
+                content.classList.remove('avnt-active');
+                content.style.maxHeight = 'none';
+                content.style.display = 'block';
+            });
+        }
+    }
+    
+    setupAccordion();
+        window.addEventListener('resize', function() {
+        setupAccordion();
+    });
+    
+   
+
 });
 
 

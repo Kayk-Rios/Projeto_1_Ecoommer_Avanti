@@ -62,7 +62,9 @@ header {
 
 .logo img {
     height: 40px;
+    margin-left: 90px;
 }
+
 
 /* Barra de pesquisa */
 .search-bar {
@@ -468,7 +470,7 @@ nav ul li a {
 /* Posicionamento dos dots */
 .swiper-pagination {
     position: absolute;
-    bottom: 180px; /* Ajuste este valor para mover para cima/baixo */
+    bottom: 80px; /* Ajuste este valor para mover para cima/baixo */
     left: 0;
     right: 0;
     display: flex;

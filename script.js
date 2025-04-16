@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializa o carrossel de produtos
     const productSlider = new Swiper('.product-slider', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20,
         loop: true,
         autoplay: {

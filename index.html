@@ -1,627 +1,686 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avanti - Loja Online</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <!-- Swiper.js para carrosséis -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Barra promocional -->
     <div class="promo-bar">
-        <p>Ganhe <span class="desconto">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10
-        </p>
+      <p>
+        Ganhe <span class="desconto">R$10,00</span> de desconto no seu primeiro
+        pedido. Utilize o cupom DESCONTO10
+      </p>
     </div>
 
     <!-- Cabeçalho -->
-    
-
 
     <header>
-        <div class="container">
-            <div class="header-content">
-                <!-- Menu Hambúrguer -->
-                <div class="hamburger-menu">
-                    <button class="hamburger-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-    
-                <div class="logo">
-                    <a href="index.html"><img src="/img/avanteLogo.png" alt="Avanti"></a>
-                </div>
-    
-                <div class="search-bar">
-                    <input type="text" id="search-input" placeholder="Digite aqui o que você procura">
-                    <button id="search-btn"><i class="fa fa-search"></i></button>
-                </div>
-    
-                <div class="user-area">
-                    <div class="user-greeting">
-                        <i class="fa fa-user mobile-icon"></i>
-                        <div class="user-text">
-                            <p>Olá,</p>
-                            <p>Nome cliente!</p>
-                        </div>
-                    </div>
-    
-                    <div class="cart">
-                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                        <span class="cart-count">2</span>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Restante do código permanece igual -->
+      <div class="container">
+        <div class="header-content">
+          <!-- Menu Hambúrguer -->
+          <div class="hamburger-menu">
+            <button class="hamburger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
 
-             <!-- Menu categorias (agora escondido por padrão) -->
-             <nav class="categories-nav">
-                <ul>
-                    <li><a href="#" class="menu-categorias bold">Todas as Categorias</a></li>
-                    <li><a href="#" class="menu-categorias">Departamento</a></li>
-                    <li><a href="#">Departamento</a></li>
-                    <li><a href="#">Departamento</a></li>
-                    <li><a href="#">Departamento</a></li>
-                    <li><a href="#">Departamento</a></li>
-                    <li><a href="#">Departamento</a></li>
-                </ul>
-            </nav>
-    
-            <!-- Submenu como tabela -->
-            <div class="main-container">
-                <div class="submenu">
-                    <div class="submenu-container">
-                        <div class="table-container">
-                            <div class="categoria">Categoria</div>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td class="departamento">Departamento</td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="departamento">Departamento</td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="departamento">Departamento</td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="departamento">Departamento</td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="departamento">Departamento</td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="departamento">Departamento</td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="departamento">Departamento</td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                        <td><a href="#">Categoria</a></td>
-                                    </tr>
-                                
+          <div class="logo">
+            <a href="index.html"
+              ><img src="/img/avanteLogo.png" alt="Avanti"
+            /></a>
+          </div>
 
+          <div class="search-bar">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Digite aqui o que você procura"
+            />
+            <button id="search-btn"><i class="fa fa-search"></i></button>
+          </div>
 
-                                </tbody>
-                            </table>
-                        </div>
-                        
-                        <div class="promo-card">
-                            <div class="card-content">
-                                <h3>Confira os</h3>
-                                <h3>Produtos</h3>
-                                <h2>Que acabaram</h2>
-                                <h2>De chegar</h2>
-                                <button class="view-all-btn">VER TODOS</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-<!-- Barra de busca móvel (hidden por padrão) -->
-
-<div class="mobile-search-bar">
-    <input type="text" id="mobile-search-input" placeholder="Digite aqui o que você procura">
-    <button id="mobile-search-btn"><i class="fa fa-search"></i></button>
-</div>
-
-
-           <!-- Banner principal -->
-    <section class="main-banner">
-        <div class="container">
-            <div class="banner-content">
-                <div class="image-content">
-                    <img src="/img/bancoRoupas.png" alt="Promoção" class="block"/>
-                </div>
-                <div class="text-content">
-                    <h1>SUPER SALE</h1>
-                    <h2>ITENS SELECIONADOS COM ATÉ</h2>
-                    <div class="discount">50%OFF</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-      <!-- Resultado da busca (inicialmente oculto) -->
-      <div class="search-result container" id="search-result" style="display: none;">
-        <p>Você buscou por: "<span id="search-term"></span>"</p>
-    </div>
-   
-    <div class="search-result-mobile">
-        <p>Você pesquisou por: <span id="mobile-search-term"></span></p>
-    </div>
-
-    <section class="product-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Lançamentos</h2>
-                <a href="#" class="see-more">Ver mais</a>
+          <div class="user-area">
+            <div class="user-greeting">
+              <i class="fa fa-user mobile-icon"></i>
+              <div class="user-text">
+                <p>Olá,</p>
+                <p>Nome cliente!</p>
+              </div>
             </div>
 
-            <!-- Carrossel de produtos -->
-            <div class="swiper product-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title"> Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-
-                   
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title">Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-
-                   
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title"> Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-
-                    
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title"> Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-
-                   
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title"> Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navegação do carrossel -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
+            <div class="cart">
+              <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              <span class="cart-count">2</span>
             </div>
+          </div>
         </div>
-    </section>
 
-    <section class="section-1">
-        <div class="image-container">
-            <img src="/img/canecaLado.png" alt="Caneca Avanti" class="mug-image">
-        </div>
-        <div class="content-container">
-            <h2>LOREM IPSUM</h2>
-            <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
-                eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
-                magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec
-                sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero
-                commodo egestas efficitur id augue.</p>
-            <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
-                eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
-                magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec
-                sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero
-                commodo egestas efficitur id augue.</p>
-        </div>
-    </section>
+        <!-- Restante do código permanece igual -->
 
-      <!-- Seção 2 - Caneca com layout em coluna -->
-      <section class="section-2-container">
-        <div class="section-2-wrapper">
-            <div class="section-2-features">
-                <h2>LOREM IPSUM</h2>
-                <div class="section-2-feature">
-                    <div class="section-2-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 22s-8-4.5-8-11.8C4 5.5 7.5 2 12 2s8 3.5 8 8.2c0 7.3-8 11.8-8 11.8z" />
-                            <circle cx="12" cy="10" r="3" />
-                        </svg>
-                    </div>
-                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+        <!-- Menu categorias (agora escondido por padrão) -->
+        <nav class="categories-nav">
+          <ul>
+            <li>
+              <a href="#" class="menu-categorias bold">Todas as Categorias</a>
+            </li>
+            <li><a href="#" class="menu-categorias">Departamento</a></li>
+            <li><a href="#">Departamento</a></li>
+            <li><a href="#">Departamento</a></li>
+            <li><a href="#">Departamento</a></li>
+            <li><a href="#">Departamento</a></li>
+            <li><a href="#">Departamento</a></li>
+          </ul>
+        </nav>
+
+        <!-- Submenu como tabela -->
+        <div class="main-container">
+          <div class="submenu">
+            <div class="submenu-container">
+              <div class="table-container">
+                <div class="categoria">Categoria</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="departamento">Departamento</td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                    </tr>
+                    <tr>
+                      <td class="departamento">Departamento</td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                    </tr>
+                    <tr>
+                      <td class="departamento">Departamento</td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                    </tr>
+                    <tr>
+                      <td class="departamento">Departamento</td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                    </tr>
+                    <tr>
+                      <td class="departamento">Departamento</td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                    </tr>
+                    <tr>
+                      <td class="departamento">Departamento</td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                    </tr>
+                    <tr>
+                      <td class="departamento">Departamento</td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                      <td><a href="#">Categoria</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="promo-card">
+                <div class="card-content">
+                  <h3>Confira os</h3>
+                  <h3>Produtos</h3>
+                  <h2>Que acabaram</h2>
+                  <h2>De chegar</h2>
+                  <button class="view-all-btn">VER TODOS</button>
                 </div>
-                <div class="section-2-feature">
-                    <div class="section-2-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 22s-8-4.5-8-11.8C4 5.5 7.5 2 12 2s8 3.5 8 8.2c0 7.3-8 11.8-8 11.8z" />
-                            <circle cx="12" cy="10" r="3" />
-                        </svg>
-                    </div>
-                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-                </div>
-                <div class="section-2-feature">
-                    <div class="section-2-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 22s-8-4.5-8-11.8C4 5.5 7.5 2 12 2s8 3.5 8 8.2c0 7.3-8 11.8-8 11.8z" />
-                            <circle cx="12" cy="10" r="3" />
-                        </svg>
-                    </div>
-                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-                </div>
+              </div>
             </div>
-            <div class="section-2-image">
-                <img src="/img/canecaTabua.png" alt="Caneca Avanti na mesa">
-            </div>
-        </div>
-    </section>
-
-    <section class="section-1">
-        <div class="image-container">
-            <img src="/img/canecaLado.png" alt="Caneca Avanti" class="mug-image">
-        </div>
-        <div class="content-container">
-            <h2>LOREM IPSUM</h2>
-            <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
-                eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
-                magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec
-                sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero
-                commodo egestas efficitur id augue.</p>
-            <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
-                eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
-                magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec
-                sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero
-                commodo egestas efficitur id augue.</p>
-        </div>
-    </section>
-
-    <section class="product-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Lançamentos</h2>
-                <a href="#" class="see-more">Ver mais</a>
-            </div>
-
-            <!-- Carrossel de produtos -->
-            <div class="swiper product-slider">
-                <div class="swiper-wrapper">
-                    <!-- Produto 1 -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title"> Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-
-                    <!-- Produto 2 -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title">Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-
-                    <!-- Produto 3 -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title"> Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-
-                    <!-- Produto 4 -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title"> Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-
-                    <!-- Produto 5 -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="badge">NOVO</div>
-                            <div class="product-image">
-                                <img src="/img/homemLogo.png" alt="Camiseta Básica">
-                            </div>
-                            <h3 class="product-title"> Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit </h3>
-                            <div class="product-price">
-                                <p class="old-price">R$ 100,00</p>
-                                <div class="current-price">
-                                    <p class="price">R$79,90</p>
-                                    <span class="discount-badge">10% OFF</span>
-                                </div>
-                            </div>
-                            <p class="installments">Ou em até 10x de R$ 7,90</p>
-                            <button class="buy-button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navegação do carrossel -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="imagemBAck">
-        <div class="textBAck">
-            <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <div class="newsletter-container">
-        <p class="title">
-          Cadastre-se na nossa <a href="#" class="newsletter-link">newsletter</a>
-        </p>
-        <div class="newsletter-box">
-          <input type="text" placeholder="Digite seu nome" class="input" />
-          <input type="email" placeholder="Digite seu e-mail" class="input" />
-          <label class="checkbox-container">
-            <input type="checkbox" />
-            <span>Estou de acordo com a <a href="#">Política de Privacidade</a></span>
-          </label>
-          <button class="submit-btn">Cadastrar</button>
+          </div>
         </div>
       </div>
-      
+    </header>
+    <!-- Barra de busca móvel (hidden por padrão) -->
 
+    <div class="mobile-search-bar">
+      <input
+        type="text"
+        id="mobile-search-input"
+        placeholder="Digite aqui o que você procura"
+      />
+      <button id="mobile-search-btn"><i class="fa fa-search"></i></button>
+    </div>
 
+    <!-- Banner principal -->
+    <section class="main-banner">
+      <div class="container">
+        <div class="banner-content">
+          <div class="image-content">
+            <img src="/img/bancoRoupas.png" alt="Promoção" class="block" />
+          </div>
+          <div class="text-content">
+            <h1>SUPER SALE</h1>
+            <h2>ITENS SELECIONADOS COM ATÉ</h2>
+            <div class="discount">50%OFF</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Resultado da busca (inicialmente oculto) -->
+    <div
+      class="search-result container"
+      id="search-result"
+      style="display: none"
+    >
+      <p>Você buscou por: "<span id="search-term"></span>"</p>
+    </div>
 
+    <div class="search-result-mobile">
+      <p>Você pesquisou por: <span id="mobile-search-term"></span></p>
+    </div>
 
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lançamentos</h2>
+          <a href="#" class="see-more">Ver mais</a>
+        </div>
 
+        <!-- Carrossel de produtos -->
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
 
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
 
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
 
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
 
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
+          </div>
 
+          <!-- Navegação do carrossel -->
+          
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
 
-  <!-- footer -->
- 
-  <footer class="avnt-footer">
-    <div class="avnt-container">
+    <section class="section-1">
+      <div class="image-container">
+        <img src="/img/canecaLado.png" alt="Caneca Avanti" class="mug-image" />
+      </div>
+      <div class="content-container">
+        <h2>LOREM IPSUM</h2>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção 2 - Caneca com layout em coluna -->
+    <section class="section-2-container">
+      <div class="section-2-wrapper">
+        <div class="section-2-features">
+          <h2>LOREM IPSUM</h2>
+          <div class="section-2-feature">
+            <div class="section-2-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 22s-8-4.5-8-11.8C4 5.5 7.5 2 12 2s8 3.5 8 8.2c0 7.3-8 11.8-8 11.8z"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="section-2-feature">
+            <div class="section-2-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 22s-8-4.5-8-11.8C4 5.5 7.5 2 12 2s8 3.5 8 8.2c0 7.3-8 11.8-8 11.8z"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="section-2-feature">
+            <div class="section-2-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 22s-8-4.5-8-11.8C4 5.5 7.5 2 12 2s8 3.5 8 8.2c0 7.3-8 11.8-8 11.8z"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+        </div>
+        <div class="section-2-image">
+          <img src="/img/canecaTabua.png" alt="Caneca Avanti na mesa" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-1">
+      <div class="image-container">
+        <img src="/img/canecaLado.png" alt="Caneca Avanti" class="mug-image" />
+      </div>
+      <div class="content-container">
+        <h2>LOREM IPSUM</h2>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lançamentos</h2>
+          <a href="#" class="see-more">Ver mais</a>
+        </div>
+
+        <!-- Carrossel de produtos -->
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+            <!-- Produto 1 -->
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="badge">NOVO</div>
+                <div class="product-image">
+                  <img src="/img/homemLogo.png" alt="Camiseta Básica" />
+                </div>
+                <h3 class="product-title">
+                  Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                </h3>
+                <div class="product-price">
+                  <p class="old-price">R$ 100,00</p>
+                  <div class="current-price">
+                    <p class="price">R$79,90</p>
+                    <span class="discount-badge">10% OFF</span>
+                  </div>
+                </div>
+                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                <button class="buy-button">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navegação do carrossel -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="imagemBAck">
+      <div class="textBAck">
+        <p>
+          Entre em contato conosco e verifique a disponibilidade para sua
+          região!
+        </p>
+      </div>
+    </div>
+
+    <div class="newsletter-container">
+      <p class="title">
+        Cadastre-se na nossa <a href="#" class="newsletter-link">newsletter</a>
+      </p>
+      <div class="newsletter-box">
+        <input type="text" placeholder="Digite seu nome" class="input" />
+        <input type="email" placeholder="Digite seu e-mail" class="input" />
+        <label class="checkbox-container">
+          <input type="checkbox" />
+          <span
+            >Estou de acordo com a <a href="#">Política de Privacidade</a></span
+          >
+        </label>
+        <button class="submit-btn">Cadastrar</button>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="avnt-footer">
+      <div class="avnt-container">
         <div class="avnt-brand-social">
-            <div class="avnt-logo">
-                <a href="https://www.exemplo.com" target="_blank">
-                    <img src="/img/avanteLogo.png" alt="Logo Avanti">
-                </a>
-            </div>
-            <div class="avnt-social-icons">
-                <a href="https://www.instagram.com/penseavanti/" target="_blank">
-                    <img src="/img/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/penseavanti/?locale=pt_BR" target="_blank">
-                    <img src="/img/facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.youtube.com/@penseavanti/videos" target="_blank">
-                    <img src="/img/youtube.png" alt="YouTube">
-                </a>
-                <a href="https://www.tiktok.com" target="_blank">
-                    <img src="/img/tiktok.png" alt="TikTok">
-                </a>
-            </div>
+          <div class="avnt-logo">
+            <a href="https://www.exemplo.com" target="_blank">
+              <img src="/img/avanteLogo.png" alt="Logo Avanti" />
+            </a>
+          </div>
+          <div class="avnt-social-icons">
+            <a href="https://www.instagram.com/penseavanti/" target="_blank">
+              <img src="/img/instagram.png" alt="Instagram" />
+            </a>
+            <a
+              href="https://www.facebook.com/penseavanti/?locale=pt_BR"
+              target="_blank"
+            >
+              <img src="/img/facebook.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.youtube.com/@penseavanti/videos"
+              target="_blank"
+            >
+              <img src="/img/youtube.png" alt="YouTube" />
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+              <img src="/img/tiktok.png" alt="TikTok" />
+            </a>
+          </div>
         </div>
 
         <div class="avnt-section">
-            <h4 class="avnt-section-title avnt-accordion-header"><strong>Institucional</strong></h4>
-            <div class="avnt-accordion-content">
-                <h5 class="avnt-link-item">Sobre Nós</h5>
-                <h5 class="avnt-link-item">Nossas Lojas</h5>
-                <h5 class="avnt-link-item">Privacidade e Segurança</h5>
-                <h5 class="avnt-link-item">Termos e Condições</h5>
-            </div>
+          <h4 class="avnt-section-title avnt-accordion-header">
+            <strong>Institucional</strong>
+          </h4>
+          <div class="avnt-accordion-content">
+            <h5 class="avnt-link-item">Sobre Nós</h5>
+            <h5 class="avnt-link-item">Nossas Lojas</h5>
+            <h5 class="avnt-link-item">Privacidade e Segurança</h5>
+            <h5 class="avnt-link-item">Termos e Condições</h5>
+          </div>
         </div>
 
         <div class="avnt-section">
-            <h4 class="avnt-section-title avnt-accordion-header"><strong>Central de Ajuda</strong></h4>
-            <div class="avnt-accordion-content">
-                <h5 class="avnt-link-item">Fale Conosco</h5>
-                <h5 class="avnt-link-item">Frete e Entrega</h5>
-                <h5 class="avnt-link-item">Trocas e Devoluções</h5>
-                <h5 class="avnt-link-item">Formas de Pagamento</h5>
-                <h5 class="avnt-link-item">FAQ</h5>
-            </div>
+          <h4 class="avnt-section-title avnt-accordion-header">
+            <strong>Central de Ajuda</strong>
+          </h4>
+          <div class="avnt-accordion-content">
+            <h5 class="avnt-link-item">Fale Conosco</h5>
+            <h5 class="avnt-link-item">Frete e Entrega</h5>
+            <h5 class="avnt-link-item">Trocas e Devoluções</h5>
+            <h5 class="avnt-link-item">Formas de Pagamento</h5>
+            <h5 class="avnt-link-item">FAQ</h5>
+          </div>
         </div>
 
         <div class="avnt-section">
-            <h4 class="avnt-section-title avnt-accordion-header"><strong>Atendimento</strong></h4>
-            <div class="avnt-accordion-content">
-                <h5 class="avnt-link-item"><strong>Telefone:</strong> (00) 1234-5678</h5>
-                <h5 class="avnt-link-item"><strong>E-mail:</strong> avanti@exemplo.com.br</h5>
-                <h5 class="avnt-link-item"><strong>Horário de Atendimento:</strong></h5>
-                <h5 class="avnt-link-item">Segunda a Sábado: 07h00 às 23h00</h5>
-                <h5 class="avnt-link-item">Domingos e Feriados: 07h00 às 21h00</h5>
-            </div>
+          <h4 class="avnt-section-title avnt-accordion-header">
+            <strong>Atendimento</strong>
+          </h4>
+          <div class="avnt-accordion-content">
+            <h5 class="avnt-link-item">
+              <strong>Telefone:</strong> (00) 1234-5678
+            </h5>
+            <h5 class="avnt-link-item">
+              <strong>E-mail:</strong> avanti@exemplo.com.br
+            </h5>
+            <h5 class="avnt-link-item">
+              <strong>Horário de Atendimento:</strong>
+            </h5>
+            <h5 class="avnt-link-item">Segunda a Sábado: 07h00 às 23h00</h5>
+            <h5 class="avnt-link-item">Domingos e Feriados: 07h00 às 21h00</h5>
+          </div>
         </div>
+      </div>
+
+      <div class="avnt-payment-methods">
+        <img src="/img/Cartoes.png" alt="Formas de Pagamento" />
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi.
+      </p>
+      <img src="/img/empresas.png" alt="" />
     </div>
-
-    <div class="avnt-payment-methods">
-        <img src="/img/Cartoes.png" alt="Formas de Pagamento">
-    </div>
-</footer>
-
-
-
-
-<div class="footer-bottom">
-    <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-        accumsan et
-        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
-        facilisi.
-    </p>
-    <img src="/img/empresas.png" alt="">
-</div>
-
-
-
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

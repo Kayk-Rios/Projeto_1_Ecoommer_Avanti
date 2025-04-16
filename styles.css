@@ -1163,7 +1163,7 @@ nav ul li a {
 /* Mostra apenas em mobile */
 @media (max-width: 992px) {
     .mobile-search-bar {
-        display: flex;
+        display: flex !important;
     }
 }
 

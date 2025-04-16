@@ -57,6 +57,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    const searchBtn2 = document.getElementById('search-btn2');
+    const searchInput2 = document.getElementById('search-input2');
+    const searchResult2 = document.getElementById('search-result2');
+    const searchTerm2 = document.getElementById('search-term2');
+
+    searchBtn.addEventListener('click', function() {
+        const query = searchInput.value.trim();
+        
+        if (query !== '') {
+            searchTerm.textContent = query;
+            searchResult.style.display = 'block';
+            searchResult.scrollIntoView({ behavior: 'smooth' });
+            searchInput.value = '';
+        } else {
+            searchResult.style.display = 'none';
+        }
+    });
+
+    searchInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            searchBtn.click();
+        }
+    });
+    
+
+
     // Funcionalidade de menu de categorias (submenu em forma de tabela)
     const menuCategorias = document.querySelectorAll(".menu-categorias");
     const submenu = document.querySelector(".submenu");
@@ -152,7 +178,58 @@ document.addEventListener('DOMContentLoaded', function() {
         setupAccordion();
     });
     
-   
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const categoriesNav = document.querySelector('.categories-nav');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    document.body.appendChild(overlay);
+
+    hamburgerBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        categoriesNav.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', function() {
+        hamburgerBtn.classList.remove('active');
+        categoriesNav.classList.remove('active');
+        this.classList.remove('active');
+    });
+
+    // Fechar o menu ao clicar em um item
+    const navItems = document.querySelectorAll('.categories-nav a');
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            hamburgerBtn.classList.remove('active');
+            categoriesNav.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    });
+
+    // Busca Mobile
+const mobileSearchBtn = document.getElementById('mobile-search-btn');
+const mobileSearchInput = document.getElementById('mobile-search-input');
+const mobileSearchTerm = document.getElementById('mobile-search-term');
+const searchResultMobile = document.querySelector('.search-result-mobile');
+
+mobileSearchBtn.addEventListener('click', function() {
+    const query = mobileSearchInput.value.trim();
+    
+    if (query !== '') {
+        mobileSearchTerm.textContent = query;
+        searchResultMobile.style.display = 'block';
+        mobileSearchInput.value = '';
+    } else {
+        searchResultMobile.style.display = 'none';
+    }
+});
+
+mobileSearchInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        mobileSearchBtn.click();
+    }
+});
+    
 
 });
 
